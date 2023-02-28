@@ -3,6 +3,8 @@ numpy
 pandas
 matplotlib
 scikit-learn
+seaborn
+imblearn
 
 # Web development libraries
 flask
