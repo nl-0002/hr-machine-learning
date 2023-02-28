@@ -1,0 +1,15 @@
+# Core libraries
+numpy
+pandas
+matplotlib
+scikit-learn
+
+# Web development libraries
+flask
+
+# Other useful libraries
+jupyter
+ipython
+
+# Logging
+loguru
