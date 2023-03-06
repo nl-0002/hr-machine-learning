@@ -5,6 +5,8 @@ matplotlib
 scikit-learn
 seaborn
 imblearn
+fastapi
+uvicorn
 
 # Web development libraries
 flask
