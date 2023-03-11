@@ -43,7 +43,7 @@ python run.py
 Example of sending an inference request via Swagger UI:
 ![Fastapi](images/fastapi_demo.png)
 Example of output:
-![Fastapioutput](placeholder)
+![Fastapioutput](images/fastapi_output.png)
 Example of sending an inference request via command line:
 ```
 curl -X 'POST' \
@@ -51,6 +51,7 @@ curl -X 'POST' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
+    "enrollee_id": 12,
     "city_development_index": "0.827",
     "gender": "Male",
     "relevent_experience": "Has relevent experience",
