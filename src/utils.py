@@ -4,10 +4,12 @@ import numpy as np
 
 def preprocess(data):
     data = data.dict()
-    data = pd.DataFrame([data])
+    enrollee_id = data['enrollee_id']
+    data = pd.DataFrame([data]).drop(columns='enrollee_id')
     data = data.apply(lambda row: row.fillna(np.nan),axis=1)
-    return data
+    return enrollee_id, data
 
-def postprocess(data):
-    response_dict = {0: "Likely to stay in company", 1: "Likely to leave the company"}
-    return response_dict[data[0]]
+def postprocess(enrollee_id, data):
+    response_dict = {0: "stay in", 1: "leave"}
+    response = f'Enrollee Id: {enrollee_id} is likely to {response_dict[data[0]]} the company'
+    return response

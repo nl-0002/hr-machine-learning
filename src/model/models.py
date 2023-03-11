@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 
 class InputData(BaseModel):
+    enrollee_id: int
     city_development_index: Optional[float]
     gender: Optional[str]
     relevent_experience: Optional[str]

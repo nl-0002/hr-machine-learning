@@ -5,7 +5,7 @@ if __name__ == "__main__":
     uvicorn.run("src.main:app", host="localhost", port=2222, workers=APP_WORKERS, reload=True)
 
 
-# {
+# {   "enrollee_id": 12,
 #     "city_development_index": "0.827",
 #     "gender": "Male",
 #     "relevent_experience": "Has relevent experience",

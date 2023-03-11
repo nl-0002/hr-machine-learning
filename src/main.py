@@ -23,12 +23,12 @@ async def root():
 @app.post("/v1/predict", tags=["model"])
 async def predict(input_data: InputData):
     # convert input data to the format expected by your model
-    input_data = preprocess(input_data)
+    enrollee_id, input_data = preprocess(input_data)
 
     # make predictions using your model
     predictions = model.predict(input_data)
 
     # convert predictions to the format expected by the API response
-    response = postprocess(predictions)
+    response = postprocess(enrollee_id, predictions)
 
     return response
