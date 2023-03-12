@@ -10,6 +10,7 @@
     <a href='#about'>About</a> . 
     <a href='#prerequisites-for-development'>Prerequisites for Development</a> .
     <a href='#getting-started'>Getting Started</a> .
+    <a href='#contributors'>Contributors</a> .
 </p>
 
 ---
@@ -18,9 +19,11 @@
 This repository host **Python based scripts for HR Machine Learning**.
 It provides a skeleton for users to train models and hosting the model on fastapi to allow API calls to be made for predictions.
 
+---
 ## Prerequisites for Development
 - Python version >= 3.9, <3.10
 - Bash shell/unix terminal/git bash (for Windows)
+
 
 ## Getting Started
 ### Conda Environment:
@@ -68,3 +71,7 @@ curl -X 'POST' \
     "training_hours": "21"
 }
 ```
+---
+## Contributors
+If you have any questions please contact one of our contributors below
+- Boon Chong [Email](pehboonchong@gmail.com)
