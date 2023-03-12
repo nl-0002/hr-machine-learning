@@ -16,7 +16,7 @@
 ## About
 
 This repository host **Python based scripts for HR Machine Learning**.
-
+It provides a skeleton for users to train models and hosting the model on fastapi to allow API calls to be made for predictions.
 
 ## Prerequisites for Development
 - Python version >= 3.9, <3.10
@@ -33,6 +33,9 @@ conda create -n myenv python=3.9
 
 # installing required packages
 pip install -r requirements.txt
+
+# Running unit tests
+pytest tests/test_utils.py
 
 # Running fastapi
 python run.py
