@@ -15,5 +15,8 @@ flask
 jupyter
 ipython
 
+# Pytest
+pytest
+
 # Logging
 loguru
