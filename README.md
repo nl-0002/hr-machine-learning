@@ -9,6 +9,7 @@
 <p align='center'> 
     <a href='#about'>About</a> . 
     <a href='#prerequisites-for-development'>Prerequisites for Development</a> .
+    <a href='#directory-structure'>Directory Structure</a> .
     <a href='#getting-started'>Getting Started</a> .
     <a href='#contributors'>Contributors</a> .
 </p>
@@ -20,11 +21,41 @@ This repository host **Python based scripts for HR Machine Learning**.
 It provides a skeleton for users to train models and hosting the model on fastapi to allow API calls to be made for predictions.
 
 ---
+## Directory Structure
+```
+│   .gitignore
+│   README.md
+│   requirements.in
+│   requirements.txt
+│   run.py
+│
+├───experiments
+│       demo_notebook.ipynb
+│
+├───images
+│       fastapi_demo.png
+│       fastapi_output.png
+│
+├───src
+│   │   config.py
+│   │   main.py
+│   │   utils.py
+│   │
+│   └───model
+│       │   grid.pkl
+│       └───models.py
+│
+└───tests
+    └───test_utils.py
+```
+---
+
 ## Prerequisites for Development
+- conda environment
 - Python version >= 3.9, <3.10
 - Bash shell/unix terminal/git bash (for Windows)
 
-
+---
 ## Getting Started
 ### Conda Environment:
 ```
